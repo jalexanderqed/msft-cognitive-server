@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -6,6 +7,14 @@ import java.nio.file.Paths;
  */
 public class Main {
     public static void main(String[] args){
-        for(String line : Files.readAllLines(Paths.get("secret-test.txt")));
+        try {
+            for (String line : Files.readAllLines(Paths.get("src/main/resources/.txt"))){
+                System.out.println("line:" + line);
+            }
+        }
+        catch (IOException e){
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
     }
 }
