@@ -24,7 +24,10 @@ public class Server {
 
     public static String handleUpload(Request req, Response res){
         try {
-            ByteArrayInputStream imageBytes = new ByteArrayInputStream(req.bodyAsBytes());
+            System.out.println("Handling upload.");
+            int size;
+            ByteArrayInputStream imageBytes = new ByteArrayInputStream(size = req.bodyAsBytes().length);
+            System.out.println("Request size: " + size);
             BufferedImage image = ImageIO.read(imageBytes);
             return VisonApi.EmotionRequestWithBytes(image);
         }
