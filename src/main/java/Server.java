@@ -26,7 +26,7 @@ public class Server {
         try {
             System.out.println("Handling upload.");
             int size;
-            byte[] bytes
+            byte[] bytes;
             ByteArrayInputStream imageBytes = new ByteArrayInputStream(bytes = req.bodyAsBytes());
             System.out.println("Request size: " + bytes.length);
             BufferedImage image = ImageIO.read(imageBytes);
