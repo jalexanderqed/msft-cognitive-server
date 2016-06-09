@@ -1,4 +1,6 @@
 JSONObjects/FaceRectangle.class
 Main.class
 JSONObjects/EmotionApiResponse.class
+Server.class
 JSONObjects/EmotionApiResult.class
+VisonApi.class
