@@ -30,7 +30,9 @@ public class Server {
             ByteArrayInputStream imageBytes = new ByteArrayInputStream(bytes = req.bodyAsBytes());
             System.out.println("Request size: " + bytes.length);
             BufferedImage image = ImageIO.read(imageBytes);
-            return VisonApi.EmotionRequestWithBytes(image);
+            String emotionReturn = VisionApi.EmotionRequestWithBytes(image);
+            String faceReturn = VisionApi.FaceRequestWithBytes(image);
+            return "{'emotions': " + emotionReturn + ", 'face': " + faceReturn + '}';
         }
         catch(Exception e){
             System.out.println(e.getMessage());
