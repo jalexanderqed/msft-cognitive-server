@@ -7,5 +7,7 @@ of age, gender, facial hair, glasses, and emotional expressions.
 
 ## API Keys:
 For the project to work, API keys must be placed in the src/resources/secrets folder. The following are the files names for each API.
+
 Emotion API: emotion_api_key.key
+
 Face API: face_api_key.key
