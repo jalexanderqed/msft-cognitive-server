@@ -2,7 +2,7 @@
 ## Backend Server for use with [MicrosoftCognitiveFrontend_android](https://github.com/jalexanderqed/MicrosoftCognitiveFrontend_android)
 
 Server (in Java) that receives an image and uploads it to 
-the Microsoft Cognitive Services API for facial recognition 
+the [Microsoft Cognitive Services API](https://www.microsoft.com/cognitive-services) for facial recognition 
 of age, gender, facial hair, glasses, and emotional expressions.
 
 ## API Keys:
